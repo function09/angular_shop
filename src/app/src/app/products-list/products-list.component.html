@@ -1,0 +1,7 @@
+<mat-grid-list cols="4" TwoThreeFour rowHeight="2:1">
+  @for (product of productsList; track product.id) {
+  <mat-grid-tile>
+    {{ product.category }}
+  </mat-grid-tile>
+  }
+</mat-grid-list>
