@@ -1,12 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { HttpService } from '../../../services/http.service';
 import { MatGridListModule } from '@angular/material/grid-list';
-import Products from '../../../models/items.models';
+import { ProductComponent } from '../product/product.component';
 
 @Component({
   selector: 'app-products-list',
   standalone: true,
-  imports: [MatGridListModule],
+  imports: [MatGridListModule, ProductComponent],
   templateUrl: './products-list.component.html',
   styleUrl: './products-list.component.css',
 })

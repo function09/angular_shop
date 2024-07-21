@@ -1,1 +1,14 @@
-
+<mat-card>
+  <!-- <img mat-card-image [src]="image" alt="Image of product" /> -->
+  <mat-card-content>
+    <div>
+      <p>{{ title }}</p>
+    </div>
+    <div>
+      <!-- Need to set up a currency pipe for USD -->
+      <p>
+        {{ price }}
+      </p>
+    </div>
+  </mat-card-content>
+</mat-card>
