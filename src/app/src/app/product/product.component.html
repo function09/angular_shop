@@ -1,14 +1,14 @@
-<mat-card>
-  <!-- <img mat-card-image [src]="image" alt="Image of product" /> -->
+<mat-card class="product-card" appearance="outlined">
+  <!-- User should be able to click on image and open up a new page with product description -->
+  <img mat-card-md-image [src]="image" alt="Image of product" />
   <mat-card-content>
-    <div>
+    <div class="product-card-text">
       <p>{{ title }}</p>
     </div>
-    <div>
-      <!-- Need to set up a currency pipe for USD -->
-      <p>
-        {{ price }}
-      </p>
-    </div>
+    <!-- Need to set up a currency pipe for USD -->
+    <p class="product-card-price">
+      {{ price | currency : "USD" }}
+    </p>
+    <button mat-button (click)="addToCart(product)">Add to cart</button>
   </mat-card-content>
 </mat-card>

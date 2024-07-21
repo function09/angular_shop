@@ -1,0 +1,38 @@
+.product-card {
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.product-card img {
+  margin-top: 2rem;
+  object-fit: fill;
+}
+
+.product-card mat-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card-text {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  max-width: 100%;
+  font-size: 0.8rem;
+}
+
+.product-card .product-card-price {
+  display: flex;
+  justify-content: center;
+}
+
+.product-card button {
+  width: 100px;
+  margin-bottom: 15px;
+}
